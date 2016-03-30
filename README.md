@@ -1,1 +1,0 @@
-# jonathanmcdaniel.github.io
