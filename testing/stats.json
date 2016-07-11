@@ -1,0 +1,15 @@
+[
+    {
+        "name": "JavaScript",
+        "label": "#js-label",
+        "level": 75,
+        "chart": "#js"
+    },
+    {
+        "name": "PHP",
+        "label": "#php-label",
+        "level": 60,
+        "chart": "#php"
+    }
+    
+]

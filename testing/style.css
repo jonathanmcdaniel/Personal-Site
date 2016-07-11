@@ -1,0 +1,45 @@
+body {
+    background-color: #333;
+    color: #eee;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-slice-donut {
+    stroke: lightgreen;
+}
+
+.ct-label {
+    display: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: lightgreen;
+}
+
+.skillset {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section {
+    margin-bottom: 30px;
+}
+.section-item {
+  padding-bottom: 30px;
+}
+.section-item:last-of-type {
+  padding-bottom: 0;
+}
+p.description {
+  margin-left: 10px;
+  margin-top: 5px;
+  padding-left: 10px;
+  border-left: 2px solid #999;
+}
