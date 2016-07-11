@@ -5,7 +5,7 @@ $(document).ready(function () {
 });
 
 function loadChartData(data) {
-    for (var object in data){
+    for (var object in data) {
         buildChart(data[object]);
     }
 }
@@ -13,12 +13,20 @@ function loadChartData(data) {
 function buildChart(object) {
     var data = object;
     new Chartist.Pie(data.chart, {
+        labels: [data.level + "%"],
         series: [data.level]
     }, {
             donut: true,
-            donutWidth: 50,
+            donutWidth: 10,
             startAngle: 0,
             total: 100
+        }).on('draw', (context) => {
+            if (context.type === 'label') {
+                context.element.attr({
+                    dx: context.element.root().width() / 2,
+                    dy: context.element.root().height() / 2
+                });
+            }
         });
-        $(data.label).html(data.name);
+    $(data.label).html(data.name);
 }
