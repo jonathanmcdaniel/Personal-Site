@@ -17,7 +17,7 @@ function buildChart(object) {
         series: [data.level]
     }, {
             donut: true,
-            donutWidth: 10,
+            donutWidth: 5,
             startAngle: 0,
             total: 100
         }).on('draw', (context) => {
