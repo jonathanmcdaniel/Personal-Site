@@ -18,7 +18,7 @@ function buildChart(object) {
     }, {
             donut: true,
             donutWidth: 5,
-            startAngle: 0,
+            startAngle: 180,
             total: 100
         }).on('draw', (context) => {
             if (context.type === 'label') {

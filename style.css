@@ -10,7 +10,7 @@ a:hover,
 a:active,
 a:visited,
 a:link {
-    color: #72b3ea
+    color: #72b3ea;
 }
 .ct-series-a .ct-bar,
 .ct-series-a .ct-line,
@@ -98,6 +98,11 @@ p.description {
         font-size: 14pt;
         margin-bottom: 3px;
     }
+    h1,
+    h2,
+    h3 {
+        animation: none;
+    }
     .section {
         margin-bottom: 0;
     }
@@ -124,4 +129,35 @@ p.description {
     .skill:last-of-type:after {
         content: "";
     }
+}
+
+.ct-slice-donut {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  animation: load 0.5s linear forwards;
+}
+
+@keyframes colorize {
+    to {
+        color: #90ee90;
+    }
+}
+
+@keyframes colorize-links {
+    to {
+        color: #72b3ea;
+    }
+}
+
+@keyframes colorize-picture {
+    to {
+        -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+        filter: grayscale(0%);
+    }
+}
+
+@keyframes load {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
