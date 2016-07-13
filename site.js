@@ -20,7 +20,7 @@ function buildChart(object) {
             donutWidth: 5,
             startAngle: 180,
             total: 100
-        }).on('draw', (context) => {
+        }).on('draw', function(context) {
             if (context.type === 'label') {
                 context.element.attr({
                     dx: context.element.root().width() / 2,
