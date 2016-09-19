@@ -1,7 +1,6 @@
 body {
-    background-color: #333;
-    color: #eee;
-    margin-top: 50px;
+    background-color: #eee;
+    color: #333;
     margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
 }
@@ -16,12 +15,12 @@ a:link {
 .ct-series-a .ct-line,
 .ct-series-a .ct-point,
 .ct-series-a .ct-slice-donut {
-    stroke:#90ee90;
+    stroke:#11436f;
 }
 
 .ct-label {
-    stroke: white;
-    fill: white;
+    stroke: #333;
+    fill: #333;
     dominant-baseline: central;
     text-anchor: middle;
     font-size: 2em;
@@ -29,6 +28,7 @@ a:link {
 .profile-img {
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
+    height: 150px;
 }
 .label {
     font-weight: 400;
@@ -39,16 +39,40 @@ h3,
 h4,
 h5,
 h6 {
-    color: #90ee90;
     font-family: 'Open Sans', sans-serif;
+}
+
+.skills {
+    margin-top: 15px;
 }
 
 .skillset {
     margin-bottom: 50px;
     text-align: center;
 }
+
+.header {
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background-color: #11436f;
+    background: -webkit-linear-gradient(#185e9a, #11436f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#185e9a, #11436f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#185e9a, #11436f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#185e9a, #11436f); /* Standard syntax */
+    color: #fff;
+}
+
 .section {
-    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    padding-bottom: 15px;
+    background-color: #fff;
 }
 .section-item {
   padding-bottom: 30px;
@@ -82,6 +106,8 @@ p.description {
     }
     .header {
         text-align: center;
+        padding-top: 0;
+        padding-bottom: 5px;
     }
     hr {
         margin-bottom: 0;
@@ -104,7 +130,10 @@ p.description {
         animation: none;
     }
     .section {
+        margin-top: 0;
         margin-bottom: 0;
+        padding-bottom: 5px;
+        border: none;
     }
     .section:first-of-type {
         margin-bottom: 0;
@@ -131,6 +160,13 @@ p.description {
     }
 }
 
+@media only screen and (max-width : 768px) {
+ .section {
+     margin-left: 0;
+     margin-right: 0;
+ }
+}
+
 .ct-slice-donut {
   stroke-dasharray: 360;
   stroke-dashoffset: 360;
@@ -139,7 +175,7 @@ p.description {
 
 @keyframes colorize {
     to {
-        color: #90ee90;
+        color: #11436f;
     }
 }
 
