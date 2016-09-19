@@ -168,9 +168,9 @@ p.description {
 }
 
 .ct-slice-donut {
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  animation: load 0.5s linear forwards;
+  /*stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  animation: load 0.5s linear forwards;*/
 }
 
 @keyframes colorize {
