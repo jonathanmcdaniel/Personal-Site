@@ -4,192 +4,106 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Jonathan McDaniel</title>
 
-  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="chartist/chartist.min.css">
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="site.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row header">
-      <div class="col-xs-12 col-sm-9 col-md-10 heading">
 
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Jonathan McDaniel</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
         <h1>Jonathan McDaniel</h1>
-        <h3>Frontend Developer</h3>
-        <hr class="visible-print-block" />
-        <h5 class="hidden-print">
-          <span class="icon">
-            <a href="https://linkedin.com/in/jonathanmcdaniel" target="_blank">
-              <i class="fa fa-2x fa-linkedin-square"></i>
-            </a>
-          </span>
-          <span class="icon">
-            <a href="https://github.com/jonathanmcdaniel" target="_blank">
-              <i class="fa fa-2x fa-github-square"></i>
-            </a>
-          </span>
-          <span class="icon">
-            <a href="https://twitter.com/_jonmcdaniel" target="_blank">
-              <i class="fa fa-2x fa-twitter-square"></i>
-            </a>
-          </span>
-        </h5>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-10">
-        <div class="row section hidden-print">
+      <div class="col-xs-12">
+        http://LinkedIn.com/in/jonathanmcdaniel<br/>
+        http://www.jonmcdaniel.me
+      </div>
+    </div>
+    <div class="row" id="skills">
+      <div class="col-xs-12">
+        <div class="row">
           <div class="col-xs-12">
-            <h3>About Me</h3>
-            <p><i class="fa fa-map-marker"></i> Philadelphia, USA</p>
-            <p>
-              I am currently a junior at Drexel University completing a 5 year program in Software Engineering. I began my programming
-              career by developing and selling my first iPhone application at the age of 15 and I am still a mobile developer
-              at heart.
-            </p>
-            <p>
-              Some of my other intetests include photography, snowboarding & skiing, running, and travelling frequently.
-            </p>
+            <h2>Skills</h2>
           </div>
         </div>
-        <div class="row section">
+        <div class="row">
           <div class="col-xs-12">
-            <h3>Education</h3>
-            <strong>BS Software Engineering</strong><br/>
-            <strong>Minor: Entrepreneurship & Innovation</strong><br/> Drexel University <em>(2012-2017 Expected)</em><br/>GPA: 3.19
-          </div>
-        </div>
-        <div class="row section">
-          <div class="col-xs-12">
-            <h3>Experience</h3>
-            <p class="hidden-print">
-              <a href="resume.pdf" target="_blank"><i class="fa fa-file-text-o"></i> Printed Resume</a>
-            </p>
-            <div class="section-item">
-              <strong>Web Developer</strong><br/> Educational Commission for Foreign Medical Graduates <em>(April 2015 - Present)</em>
-              <p class="description">
-                Write VB ASP.Net code to maintain and develop a web based application. Assist in converting the old VB ASP.Net based site
-                into a modern C#, HTML5 site built on MVC5 standards.
-              </p>
-            </div>
-            <div class="section-item">
-              <strong>Mobile Developer</strong><br/> Educational Commission for Foreign Medical Graduates <em>(April 2014 - March 2015)</em>
-              <p class="description">
-                Maintained and developed a cross platform, Cordova based, application. Wrote HTML, CSS and Javascript(jQuery) for pages within
-                the application. Wrote code for network calls so that the application can interface with an internal, RESTful
-                API.
-              </p>
-            </div>
-            <div class="section-item">
-              <strong>Cofounder, Lead Developer</strong><br/> Kegg Apps, LLC <em>(October 2013 - Present)</em>
-              <p class="description">
-                Manage all aspects of application development and collaborate with other developers to maintain timely releases. Develop
-                a system based on a RESTful API written in PHP. Design and maintain a MySQL database holding all application
-                data. Write Objective-C code for a client iOS application.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row section">
-          <div class="col-xs-12">
-            <h3>Projects</h3>
-            <div class="section-item">
-              <strong>Java Game: Undiscovered Worlds</strong><br/>
-              <a class="hidden-print" href="https://github.com/RyanYoung25/UndiscoveredWorlds">View on GitHub</a><br class="hidden-print"
-              />
-              <p class="description">
-                Undiscovered Worlds is an economy / turn based game written in Java for a freshman desgin project at Drexel University for
-                SE103. The goal of the game is to exploire the universe buying and selling goods so that you can afford the
-                parts to fix your hyperdrive. You must do this while ensuring that you don't run out of fuel. To beat them
-                game you need to purchase the parts neccary to fix your ship.
-              </p>
-            </div>
-            <div class="section-item">
-              <strong>jQuery Todo List</strong><br/>
-              <a class="hidden-print" href="https://github.com/jonathanmcdaniel/task-list">View on GitHub</a><br class="hidden-print"
-              />
-              <p class="description">
-                Created a simple state-less todo list in jQuery while learning the library. The app allows you to set an urgency, title and
-                description of each task. You can also drag to reorder the items to reprioritize.
-              </p>
-            </div>
-            <div class="section-item">
-              <strong>Javascript Alert Redesign</strong><br/>
-              <a class="hidden-print" href="https://github.com/jonathanmcdaniel/js-modalalert">View on GitHub</a><br class="hidden-print"
-              />
-              <p class="description">
-                Created (<em>what I believed at the time to be</em>) a prettier alternative to the normal JavaScript alert
-                function. I created it so that it has no dependencies so that it can be used in any project. The alert allows
-                you to set the title, body, close button text and optionally have an array of input elements.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row section">
-          <div class="col-xs-12">
-            <h3>Skills</h3>
-            <h5 class="hidden-print">Top Skills</h5>
-            <p>
-              <span class="label label-default skill">HTML</span> <span class="label label-default skill">CSS</span>
-              <span class="label label-default skill">Javascript</span> <span class="label label-default skill">PHP</span>
-              <span class="label label-default skill">Java</span> <span class="label label-default skill">SQL</span>
-              <span class="label label-default skill">Cordova</span>
-            </p>
-            <h5 class="hidden-print">Developing Skills</h5>
-            <p class="hidden-print">
-              <span class="label label-default skill">Objective-C</span> <span class="label label-default skill">C#</span>
-              <span class="label label-default skill">CSS3</span> <span class="label label-default skill">Python</span>
-              <span class="label label-default skill">VB</span>
-            </p>
-            <h5 class="hidden-print">Learning</h5>
-            <p class="hidden-print">
-              <span class="label label-default skill">C</span> <span class="label label-default skill">Swift</span>
-              <span class="label label-default skill">Lisp</span>
-            </p>
+            <ul>
+              <li><strong>Languages:</strong> C#, VB, .NET, Java, JavaScript (jQuery, Angular2, Node), Python, PHP, Objective-C, MySQL, Oracle PL/SQL</li>
+              <li><strong>Version Control:</strong> Git, TFS</li>
+              <li><strong>Operating Systems:</strong> OSX/macOS, UNIX, Windows 7, Windows 10</li>
+              <li><strong>Other:</strong> UML, iOS SDK, Ionic</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="hidden-xs hidden-sm col-md-3 col-lg-2 skills">
-        <div class="row skillset">
-          <div class="col-md-12">
-            <div id="js" class="ct-chart ct-perfect-fourth"></div>
-            <h4 id="js-label"></h4>
+    </div>
+    <div class="row" id="experience">
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Experience</h2>
           </div>
         </div>
-        <div class="row skillset">
-          <div class="col-md-12">
-            <div id="php" class="ct-chart ct-perfect-fourth"></div>
-            <h4 id="php-label"></h4>
-          </div>
-        </div>
-        <div class="row skillset">
-          <div class="col-md-12">
-            <div id="java" class="ct-chart ct-perfect-fourth"></div>
-            <h4 id="java-label"></h4>
-          </div>
-        </div>
-        <div class="row skillset">
-          <div class="col-md-12">
-            <div id="objc" class="ct-chart ct-perfect-fourth"></div>
-            <h4 id="objc-label"></h4>
+        <div class="row">
+          <div class="col-xs-12">
+            <ul>
+              <li><strong>Languages:</strong> C#, VB, .NET, Java, JavaScript (jQuery, Angular2, Node), Python, PHP, Objective-C, MySQL, Oracle PL/SQL</li>
+              <li><strong>Version Control:</strong> Git, TFS</li>
+              <li><strong>Operating Systems:</strong> OSX/macOS, UNIX, Windows 7, Windows 10</li>
+              <li><strong>Other:</strong> UML, iOS SDK, Ionic</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="jquery/jquery.3.1.0.min.js"></script>
-  <script src="chartist/chartist.min.js"></script>
-  <script src="site.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
