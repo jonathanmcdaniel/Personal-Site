@@ -3,29 +3,25 @@ html {
 }
 
 body {
-  background-color: rgb(18, 127, 169);
-  background-image: -ms-linear-gradient(top, #127FA9 0%, #1592C2 100%);
-  background-image: -moz-linear-gradient(top, #127FA9 0%, #1592C2 100%);
-  background-image: -o-linear-gradient(top, #127FA9 0%, #1592C2 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #127FA9), color-stop(100, #1592C2));
-  background-image: -webkit-linear-gradient(top, #127FA9 0%, #1592C2 100%);
-  background-image: linear-gradient(to bottom, #127FA9 0%, #1592C2 100%);
+  background-color: #FFF;
 }
 
 h1 {
-  color: #FFF;
-  text-shadow: 1px 1px 10px #444;
+  color: rgb(18, 127, 169);
 }
 
 .btn {
   border-radius: 0;
 }
 
-.content {
-  padding-top: 20%;
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+    color: #FFF;
+    background-color: rgb(18, 127, 169);
+    border-color: rgb(15, 97, 129);
 }
-@media only screen and (min-width: 1200px) {
-  .content {
-    padding-top: 15%;
-  }
+
+.content {
+  padding-top: 20vh;
 }
